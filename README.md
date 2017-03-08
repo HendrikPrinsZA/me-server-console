@@ -14,6 +14,15 @@ git clone https://github.com/HendrikPrinsZA/me-server-console.git
 ### Configuration
 Specify the requirements and preferred configurations
 
+### Technologies
+- PHP
+- MySQL
+- Ember JS
+- Third Party
+ - [Pimped Apache Server Status](https://sourceforge.net/projects/pimpapachestat/)
+ - [eZ Server Monitor Web](https://github.com/shevabam/ezservermonitor-web)
+
+
 **Default configuration**
 ```json
 {
