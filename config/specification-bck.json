@@ -1,0 +1,28 @@
+{
+	"configuration": {
+		"version": "2.08.01"
+	},
+
+	"requirements": [
+	    {
+			"type": "apacheModule",
+			"required": true,
+			"display": {
+				"logo": "php-logo.png",
+				"title": "Apache Multi-Processing Module (MPM)",
+				"description": "The Apache HTTP Server is designed to be a powerful and flexible web server that can work on a very wide variety of platforms in a range of different environments. Different platforms and different environments often require different features, or may have different ways of implementing the same feature most efficiently.",
+				"additionalLines": []
+			},
+			"refresh": { "url": "api/apache/mpm", "data": {} },
+			"values": { "server": "", "minimum": "ON", "recommended": "" },
+			"actions": [
+				{
+					"type": "open",
+	                "title": "Multi-Processing Modules (MPMs)",
+	                "endpoint": "https://httpd.apache.org/docs/2.4/mpm.html"
+				}
+			]
+	    }
+
+	]
+}

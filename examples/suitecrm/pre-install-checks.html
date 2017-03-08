@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://localhost/other-systems/SuiteCRM/install.php -->
+<html lang="en_us" data-ember-extension="1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <meta http-equiv="Content-Style-Type" content="text/css">
+   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+   <title>SuiteCRM Setup Wizard:  Are you ready to install?</title>   <link rel="SHORTCUT ICON" href="http://localhost/other-systems/SuiteCRM/include/images/sugar_icon.ico">
+   <link rel="stylesheet" href="./pre-install-checks_files/install2.css" type="text/css">
+   <link rel="stylesheet" href="./pre-install-checks_files/responsiveslides.css" type="text/css">
+   <link rel="stylesheet" href="./pre-install-checks_files/themes.css" type="text/css">
+   <link rel="stylesheet" href="./pre-install-checks_files/fontello.css">
+   <link rel="stylesheet" href="./pre-install-checks_files/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+   <script src="./pre-install-checks_files/jquery-min.js"></script>
+   <script src="./pre-install-checks_files/responsiveslides.min.js"></script>
+</head>
+<body>
+    <!--SuiteCRM installer-->
+    <div id="install_container">
+    <div id="install_box">
+        <header id="install_header">
+                    <div id="steps">
+                        <p>Step 1 of 2 - Pre-Installation requirements</p>
+                        <i class="icon-progress-0" id="complete"></i>
+                        <i class="icon-progress-1"></i>
+                        <i class="icon-progress-2"></i>
+                    </div>
+            <!--
+            <div id="steps"><p>Step 1 of 2 - Pre-Installation requirements</p><i class="icon-progress-0"></i><i class="icon-progress-1"></i><i class="icon-progress-2"></i><i class="icon-progress-3"></i><i class="icon-progress-4"></i><i class="icon-progress-5"></i><i class="icon-progress-6"></i><i class="icon-progress-7"></i></div>
+            -->
+            <div class="install_img"><a href="https://suitecrm.com/" target="_blank"><img src="./pre-install-checks_files/sugar_md_open.png" alt="SuiteCRM"></a></div>
+        </header>
+	        <form action="http://localhost/other-systems/SuiteCRM/install.php" method="post" name="form" id="form">
+	        	<div id="install_content">
+	        	
+<div id="syscred">
+
+
+	   <h3>System Environment</h3><p><b>PHP Version</b> 5.6.18</p><p><b>XML Parsing</b> OK</p><p><b>MB Strings Module</b> OK</p><p><b>Writable SuiteCRM Configuration File (config.php)</b> OK</p><p><b>Writeable Custom Directory</b> OK</p><p><b>Writable Modules Sub-Directories and Files</b> OK<b>Writable Upload Directory</b> OK</p><p><b>Writable Data Sub-Directories</b> OK</p><p><b>Writable Cache Sub-Directories</b> OK</p><p><b>PHP Memory Limit</b> OK (128M)</p><p><b>ZLIB Compression Module</b> OK</p><p><b>ZIP Handling Module</b> OK</p><p><b>PCRE Library</b> OK</p><p><b>IMAP Module</b> OK</p><p><b>cURL Module</b> OK</p><p><b>Upload File Size</b> OK</p><p><b>Sprite Support</b> OK</p><p><b>PHP allows to use stream (upload://)</b> OK</p><p><b>Location of your PHP configuration file (php.ini):</b> C:\Bitnami\wampstack-5.6.18-0\php\php.ini</p>
+</div>
+<div class="clear"></div><p><b>Note: In order to run the SuiteCRM schedulers, create a batch file to run using Windows Scheduled Tasks. The batch file should include the following commands: </b><br>
+						cd C:\www\other-systems\SuiteCRM<br>
+						php.exe -f cron.php
+						<br></p>
+			   
+
+	        	<!--
+
+			    <h3>Are you ready to install?</h3>
+				<p><strong>Please read the following important information before proceeding with the installation.  The information will help you determine whether or not you are ready to install the application at this time.</strong></p>
+				<span onclick="showtime('sys_comp');" style="cursor:pointer;cursor:hand">
+				    <span id='basic_sys_comp'><img alt="Basic Search" src="themes/default/images/basic_search.gif" border="0"></span>
+				    <span id='adv_sys_comp' style='display:none'><img alt="Advanced Search" src="themes/default/images/advanced_search.gif" border="0"></span>
+				    &nbsp;Required System Components
+				</span>
+				<div id='sys_comp' >Before you begin, please be sure that you have the supported versions of the following system
+                      components:<br>
+                      <ul>
+                      <li> Database/Database Management System (Examples: MariaDB, MySQL or SQL Server)</li>
+                      <li> Web Server (Apache, IIS)</li>
+                      </ul>
+                      Consult the Compatibility Matrix in the Release Notes for
+                      compatible system components for the SuiteCRM version that you are installing.<br></div>
+				<span onclick="showtime('sys_check');" style="cursor:pointer;cursor:hand">
+				    <span id='basic_sys_check'><img alt="Basic Search" src="themes/default/images/basic_search.gif" border="0"></span>
+					<span id='adv_sys_check' style='display:none'><img alt="Advanced Search" src="themes/default/images/advanced_search.gif" border="0"></span>
+					&nbsp;Initial System Check
+				</span>
+				<div id='sys_check' >When you begin the installation process, a system check will be performed on the web server on which the SuiteCRM files are located in order to
+                      make sure the system is configured properly and has all of the necessary components
+                      to successfully complete the installation. <br><br>
+                      The system checks all of the following:<br>
+                      <ul>
+                      <li><b>PHP version</b> &#8211; must be compatible
+                      with the application</li>
+                                        <li><b>Session Variables</b> &#8211; must be working properly</li>
+                                            <li> <b>MB Strings</b> &#8211; must be installed and enabled in php.ini</li>
+
+                      <li> <b>Database Support</b> &#8211; must exist for MariaDB, MySQL or SQL Server</li>
+
+                      <li> <b>Config.php</b> &#8211; must exist and must have the appropriate
+                                  permissions to make it writeable</li>
+					  <li>The following SuiteCRM files must be writeable:<ul><li><b>/custom</li>
+<li>/cache</li>
+<li>/modules</li>
+<li>/upload</b></li></ul></li></ul>
+                                  If the check fails, you will not be able to proceed with the installation. An error message will be displayed, explaining why your system
+                                  did not pass the check.
+                                  After making any necessary changes, you can undergo the system
+                                  check again to continue the installation.<br></div>
+				<span onclick="showtime('installType');" style="cursor:pointer;cursor:hand">
+					<span id='basic_installType'><img alt="Basic Type" src="themes/default/images/basic_search.gif" border="0"></span>
+					<span id='adv_installType' style='display:none'><img alt="Advanced Type" src="themes/default/images/advanced_search.gif" border="0"></span>
+					&nbsp;Typical or Custom install
+				</span>
+				<div id='installType' >After the system check is performed, you can choose either
+                      the Typical or the Custom installation.<br><br>
+                      For both <b>Typical</b> and <b>Custom</b> installations, you will need to know the following:<br>
+                      <ul>
+                      <li> <b>Type of database</b> that will house the SuiteCRM data <ul><li>Compatible database
+                      types: MariaDB, MySQL or SQL Server.<br><br></li></ul></li>
+                      <li> <b>Name of the web server</b> or machine (host) on which the database is located
+                      <ul><li>This may be <i>localhost</i> if the database is on your local computer or is on the same web server or machine as your SuiteCRM files.<br><br></li></ul></li>
+                      <li><b>Name of the database</b> that you would like to use to house the SuiteCRM data</li>
+                        <ul>
+                          <li> You might already have an existing database that you would like to use. If
+                          you provide the name of an existing database, the tables in the database will
+                          be dropped during installation when the schema for the SuiteCRM database is defined.</li>
+                          <li> If you do not already have a database, the name you provide will be used for
+                          the new database that is created for the instance during installation.<br><br></li>
+                        </ul>
+                      <li><b>Database administrator user name and password</b> <ul><li>The database administrator should be able to create tables and users and write to the database.</li><li>You might need to
+                      contact your database administrator for this information if the database is
+                      not located on your local computer and/or if you are not the database administrator.<br><br></ul></li></li>
+                      <li> <b>SuiteCRM database user name and password</b>
+                      </li>
+                        <ul>
+                          <li> The user may be the database administrator, or you may provide the name of
+                          another existing database user. </li>
+                          <li> If you would like to create a new database user for this purpose, you will
+                          be able to provide a new username and password during the installation process,
+                          and the user will be created during installation. </li>
+                        </ul></ul><p>
+
+                      For the <b>Custom</b> setup, you might also need to know the following:<br>
+                      <ul>
+                      <li> <b>URL that will be used to access the SuiteCRM instance</b> after it is installed.
+                      This URL should include the web server or machine name or IP address.<br><br></li>
+                                  <li> [Optional] <b>Path to the session directory</b> if you wish to use a custom
+                                  session directory for SuiteCRM information in order to prevent session data from
+                                  being vulnerable on shared servers.<br><br></li>
+                                  <li> [Optional] <b>Path to a custom log directory</b> if you wish to override the default directory for the SuiteCRM log.<br><br></li>
+                                  <li> [Optional] <b>Application ID</b> if you wish to override the auto-generated
+                                  ID that ensures that sessions of one SuiteCRM instance are not used by other instances.<br><br></li>
+                                  <li><b>Character Set</b> most commonly used in your locale.<br><br></li></ul>
+                                  For more detailed information, please consult the Installation Guide.
+                                </div>
+				<hr>
+
+				-->
+
+				</div>
+                <div id="installcontrols">
+				    <input type="hidden" name="current_step" value="1">
+					<input class="acceptButton" type="button" name="goto" value="Back" id="button_back_ready" onclick="document.getElementById(&#39;form&#39;).submit();">
+			        <input class="button" type="submit" name="goto" value="Next" id="button_next2">
+			    </div>
+            </form>
+    <script>
+        function showtime(div){
+
+            if(document.getElementById(div).style.display == ''){
+                document.getElementById(div).style.display = 'none';
+                document.getElementById('adv_'+div).style.display = '';
+                document.getElementById('basic_'+div).style.display = 'none';
+            }else{
+                document.getElementById(div).style.display = '';
+                document.getElementById('adv_'+div).style.display = 'none';
+                document.getElementById('basic_'+div).style.display = '';
+            }
+
+        }
+    </script>
+</div>
+<footer id="install_footer">
+    <p id="footer_links"><a href="https://suitecrm.com/" target="_blank">Visit suitecrm.com</a> | <a href="https://suitecrm.com/index.php?option=com_kunena&amp;view=category&amp;Itemid=1137&amp;layout=list" target="_blank">Support Forums</a> | <a href="https://suitecrm.com/wiki/index.php/Installation" target="_blank">Installation Guide</a> | <a href="http://localhost/other-systems/SuiteCRM/LICENSE.txt" target="_blank">License</a>
+</p></footer>
+</div>
+
+</body></html>

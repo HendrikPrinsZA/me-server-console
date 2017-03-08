@@ -1,0 +1,59 @@
+.sidebar ul li a.active {
+    background-color: lightblue;
+}
+.panel-info>.panel-footer {
+    background-color: #d9edf7;
+}
+
+ul.list-group {
+	border: 0;
+	margin-bottom: 0;
+}
+
+ul.list-group li {
+	padding: 0;
+	margin: 0 0 3px 0;
+}
+
+ul.list-group li a {
+	cursor: pointer;
+	display: block;
+	padding: 5px 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+ul.list-group li a:hover {
+	text-decoration: none;
+	background-color: #fafafa;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.password-input {
+    border-radius: 0 0 5px 5px;
+    border-top: 0;
+    width: 100%;
+    position: relative;
+}
+
+.password-input input {
+    width: 100%;
+    position: relative;
+    padding-right: 60px;
+}
+
+.password-input .password-input-peek {
+    display: none;
+    right: 15px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}

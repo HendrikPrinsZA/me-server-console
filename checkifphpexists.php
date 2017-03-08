@@ -1,0 +1,1 @@
+{"success": true, "value": "<?php echo trim('ON');?>"}
